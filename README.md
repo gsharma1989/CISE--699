@@ -1,1 +1,1 @@
-# CISE--699
+This is my working repository for my CISE 699 thesis on AI-driven cybersecurity risk management. It holds my review protocol, risk log, screening records, and engineering logs for the Implementation Baseline checkpoint.
