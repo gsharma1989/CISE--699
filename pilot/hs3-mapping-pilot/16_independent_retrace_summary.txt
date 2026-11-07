@@ -1,0 +1,14 @@
+Independent retrace of the 8 assigned links (second reader: Gaurav Sharma)
+Done: 2026-11-07, verdicts given at about 16:47 UTC
+Method: for each link I saw only the quote anchor and the official NIST clause wording (sheet prepared by Claude; long clauses shortened slightly, full text in E04), not the self-retrace (E12), and marked Supported / Partly / Not supported. I gave verdicts only; the likely reasons for differences below are Claude's reading, not my stated reasons.
+
+My retrace:       4 of 8 Supported (50%), 4 Partly, 0 Not supported
+Self-retrace E12: 5 of 8 Supported (62.5%), 3 Partly, 0 Not supported
+Agreement:        5 of 8 links (62.5%); Cohen's kappa = 0.25 (observed 0.625, chance 0.50)
+Supported by both readers: 3 of 8 (L1, L2, L7) = 37.5%
+R2 (pre-registered, at least 80% Supported): fails under either reader.
+
+Disagreements (L3, L4, L8) suggest the two readers used different tests for "Supported":
+- L3 was accepted as Supported when the control was only implied;
+- L4 and L8 were marked Partly when the quote did not state the clause's action or its object.
+Change made: Codebook v1.1 Step 6 now defines Supported as "the quote states the clause's action (monitor, analyse, evaluate, recover) and its object"; anything implied is Partly.

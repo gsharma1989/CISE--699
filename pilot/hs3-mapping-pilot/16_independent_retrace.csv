@@ -1,0 +1,9 @@
+link,tracker_row,framework,clause_id,self_retrace_E12,my_retrace,agree,likely_reason_for_difference (Claude's reading; I gave verdicts only)
+L1,9,CSF,DE.CM-01,Supported,Supported,Y,
+L2,16,AI RMF,MEASURE 2.7,Supported,Supported,Y,
+L3,25,AI RMF,MEASURE 2.4,Partly,Supported,N,Quote names what must be watched (drift; manipulation) but not the monitoring itself; accepted as implied in my retrace
+L4,25,CSF,DE.AE-02,Supported,Partly,N,Quote names a tool (SIEM); the clause names an activity (analysing adverse events)
+L5,33,CSF,DE.CM-01,Partly,Partly,Y,
+L6,40,CSF,RC.RP-01,Partly,Partly,Y,
+L7,48,AI RMF,MEASURE 2.4,Supported,Supported,Y,
+L8,48,CSF,DE.CM-09,Supported,Partly,N,Quote is about AI systems; the clause is about computing in general

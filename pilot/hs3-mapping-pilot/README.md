@@ -5,7 +5,7 @@ This folder holds the full record of the Hard Stop 3 (thesis format) pilot. It t
 ## Order of work (check the commit times)
 1. `00_preregistration.md`, then `01`–`05` were committed **before** any coding (commits 3c81870 and 8f38b6a, 2026-11-07 02:49 and 02:51 UTC).
 2. Inputs were checked (`06`, `07`), then the sample was coded (`08`), the lookup was run three times (`09`, `10`, `run1`–`run3`), the validator was tested with seeded errors (`11`), each link was retraced (`12`), and Assignment 09 was re-checked against the same rule (`13`).
-3. The procedure was revised to v1.1 (`14`). Role coding by me (`15`) is the second-reader check.
+3. The procedure was revised to v1.1 (`14`). Role coding by me (`15`) and my independent retrace of every link (`16`) are the second-reader checks.
 
 ## How to repeat the computational steps
 Environment used: Ubuntu 24.04.5, Python 3.13.16, openpyxl; no network needed for steps 1–2.
@@ -38,3 +38,4 @@ The search re-run (`07`) needs internet access to the OpenAlex API; its query st
 | E13 | 13_a09_retrospective_check.csv | Assignment 09 D-role links re-checked against the same rule |
 | E14 | 14_codebook_v1.1.md | Revised procedure |
 | E15 | 15_role_coding_check.md | My blind role coding vs Pass A (R4): 4 of 8, fails |
+| E17 | 16_independent_retrace.csv, 16_independent_retrace_summary.txt | My independent retrace of the 8 links: 4 of 8 Supported; agrees with E12 on 5 of 8 |
