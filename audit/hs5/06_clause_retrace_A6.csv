@@ -1,0 +1,23 @@
+item,link_id,tracker_row,framework,clause_id,quote_anchor,my_verdict_v11,claude_verdict_v11,agree
+C1,P01,1,AI RMF,MEASURE 2.9,explainability and interpretability characteristics of the AI model,Partly,Supported,N
+C2,P02,1,CSF,ID.RA-01,identifies and prioritizes the most critical vulnerabilities,Partly,Supported,N
+C3,P08,3,CSF,ID.RA-04,proactive risk assessment,Partly,Partly,Y
+C4,P09,3,CSF,DE.CM-01,real-time threat detection,Partly,Partly,Y
+C5,P10,3,CSF,RS.MA-01,automated incident response,Partly,Supported,N
+C6,P13,4,CSF,DE.CM-01,"continuously monitor network environments, detect anomalies",Supported,Supported,Y
+C7,P14,4,CSF,DE.AE-02,"detect anomalies, and predict potential vulnerabilities",Partly,Partly,Y
+C8,P15,4,CSF,RS.MA-01,automate incident response processes,Partly,Supported,N
+C9,P17,5,CSF,DE.CM-01,more precise threat detection,Partly,Partly,Y
+C10,P18,5,CSF,RS.MA-01,faster incident response capability,Partly,Partly,Y
+C11,P20,18,AI RMF,GOVERN 1.4,each decision is auditable and policy-compliant,Partly,Supported,N
+C12,P21,18,AI RMF,MEASURE 2.4,enforces operational and ethical constraints,Partly,Partly,Y
+C13,P22,18,CSF,DE.CM-01,policy-aware intrusion detection architecture,Partly,Partly,Y
+C14,P23,18,CSF,PR.PS-04,each decision is auditable,Partly,Partly,Y
+C15,P25,8,AI RMF,GOVERN 1.2,the need to build effective AI governance systems,Partly,Partly,Y
+C16,P27,8,CSF,GV.PO-01,the need to build effective AI governance systems,Partly,Partly,Y
+C17,P37,52,AI RMF,MEASURE 2.7,We evaluate four principal attack categories,Partly,Supported,N
+C18,P38,52,AI RMF,MEASURE 2.10,"data poisoning, model inversion, and membership inference",Partly,Supported,N
+C19,P39,52,CSF,ID.RA-01,a critical vulnerability surface,Partly,Partly,Y
+C20,P40,52,CSF,PR.DS-10,"compromise the confidentiality, integrity, and availability of user data",Not supported,Partly,N
+C21,P42,21,CSF,ID.RA-03,"sophisticated phishing, deepfake-enabled social engineering",Partly,Supported,N
+C22,P43,50,CSF,ID.RA-03,emerging AI- and ML-driven cyber threats faced by enterprises,Partly,Supported,N

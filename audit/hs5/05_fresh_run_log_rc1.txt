@@ -1,0 +1,15 @@
+Fresh run of hs5-rc1 following README Section 6 only
+start_utc=2026-11-07T18:25:42Z
+machine: Linux 6.18.44-fc-v310; Python 3.13.16
+[runA] downloaded from tag hs5-rc1: 10 files; tracker sha256=cb302f1ab57d0f03
+[notice] To update, run: pip install --upgrade pip
+[runA] venv: Python 3.13.16, openpyxl 3.1.5
+[runA] exit=0
+[runA] all 5 outputs match the expected SHA-256 in audit/hs5/05_expected_outputs_rc1.txt
+[runB] downloaded from tag hs5-rc1: 10 files; tracker sha256=cb302f1ab57d0f03
+[notice] To update, run: pip install --upgrade pip
+[runB] venv: Python 3.13.16, openpyxl 3.1.5
+[runB] exit=0
+[runB] all 5 outputs match the expected SHA-256 in audit/hs5/05_expected_outputs_rc1.txt
+runA and runB byte-identical
+end_utc=2026-11-07T18:25:54Z
