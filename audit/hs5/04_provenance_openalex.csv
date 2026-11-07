@@ -1,0 +1,61 @@
+tracker_row,decision,tracker_year,openalex_id,doi_in_index,index_year,index_type,title_match,status,note
+1,Include,2025,W4412176299,10.1007/s40860-025-00253-3,2025,article,1,matched,
+2,Include,2025,W4414427384,10.3390/systems13100835,2025,article,1,matched,
+3,Include,2024,W4406657990,10.1109/ijcc64742.2024.10847294,2024,conference-paper,1,matched,
+4,Include,2025,W4407919796,10.54473/ijtret.2025.9210,2025,article,1,matched,
+5,Include,2026,W7124132900,10.1201/9788743808077-4,2026,book-chapter,1,matched,
+6,Include,2025,W4416368082,10.1007/978-3-032-24810-7_41,2026,conference-paper,1,matched,Tracker year 2025 is the arXiv preprint; the index now holds the 2026 published version (already noted in the tracker on 2026-10-29)
+7,Include,2026,,,,,,not found in index,Not indexed in OpenAlex or Crossref at audit time; checked at the publisher in Hard Stop 4; identifier still to be recorded
+8,Include,2026,W7166565348,10.35808/ersj/4376,2026,article,1,matched,
+9,Include,2026,W7166272523,,2026,review,1,matched,No DOI (AMCIS TREO short paper); OpenAlex ID recorded
+10,Exclude,2021,W3201280939,10.1109/compsac51774.2021.00107,2021,conference-paper,0.92,matched (near-identical title),Title differs slightly in the index (similarity 0.92); same authors and venue
+11,Exclude,2025,,,,,,not found in index,Not indexed in OpenAlex or Crossref at audit time (AIS eLibrary paper); excluded source
+12,Exclude,2025,W4410829262,10.1108/tg-03-2025-0065,2025,article,1,matched,
+13,Include,2025,W4410061972,10.1007/s10462-025-11147-4,2025,article,1,matched,
+14,Include,2026,W7117980638,10.1007/978-3-032-10783-1_14,2026,conference-paper,1,matched,DISCREPANCY: tracker says preprint; the index holds a 2026 Springer conference version. Corrected in the tracker (rc2)
+15,Include,2025,W4414196234,10.48009/3_iis_2025_2025_131,2025,review,1,matched,
+16,Include,2025,W4411550499,10.1145/3715275.3732020,2025,conference-paper,1,matched,
+17,Include,2025,W4417464794,10.48550/arxiv.2512.13907,2025,preprint,1,matched,
+18,Include,2026,W7163569892,10.3389/frai.2026.1755696,2026,article,1,matched,
+19,Include,2025,,,,,,not found in index,"Web article, no DOI: https://cmr.berkeley.edu/2025/04/cyber-risk-governance-crg-in-the-age-of-ai-driven-open-innovation/"
+20,Include,2026,W7154940620,10.63158/journalisi.v8i2.1579,2026,review,1,matched,
+21,Include,2026,W7214057202,10.5281/zenodo.22894987,2026,article,1,matched,"Zenodo version DOI; Assignment 09 cites 10.5281/zenodo.22895975 (the other DOI of the same record, which redirects here in OpenAlex)"
+22,Include,2023,W4362704894,10.1016/j.inffus.2023.101804,2023,article,1,matched,
+23,Include,2026,,,,,,not found in index,Not indexed in OpenAlex or Crossref; DOI from the publisher page cited in Assignment 09: 10.18775/ijied.1849-7551-7020.2015.121.2001 (not machine-checked)
+24,Exclude,2025,,,,,,not found in index,Not found in OpenAlex or Crossref under this title (arXiv preprint); excluded source; identifier still to be recorded
+25,Include,2026,W7160401745,10.70593/978-93-7185-561-7,2026,book,1,matched,An SSRN preprint version (10.2139/ssrn.6724301) also exists; the tracker entry is the book
+26,Include,2025,W4414743541,10.28925/2663-4023.2025.29.872,2025,article,1,matched,
+27,Include,2024,W4403738032,10.51594/csitrj.v5i10.1677,2024,article,1,matched,
+28,Include,2026,W7172277294,10.5281/zenodo.21778277,2026,article,1,matched,
+29,Exclude,2025,W4411359756,10.1109/iccies63851.2025.11032566,2025,conference-paper,1,matched,Duplicate title with T#31; this record is Dharmireddi et al.
+30,Include,2026,W7131837470,10.4018/979-8-3373-7996-8.ch007,2026,book-chapter,1,matched,
+31,Exclude,2025,W7143337583,10.1109/icdsinc66221.2025.11448124,2025,conference-paper,1,matched,Duplicate title with T#29; this record is Karri et al.
+32,Exclude,2023,W4389437292,10.61969/jai.1329224,2023,article,1,matched,
+33,Include,2024,W4405812637,10.4018/979-8-3373-1102-9.ch008,2024,book-chapter,1,matched,
+34,Include,2025,W7115062923,10.5281/zenodo.17923825,2025,article,1,matched,
+35,Include,2025,W4412573825,10.46402/sjrit.2025.20,2025,article,1,matched,
+36,Exclude,2025,W4411642097,10.4018/979-8-3373-1737-3.ch011,2025,book-chapter,1,matched,
+37,Include,2026,W7221579403,,2026,article,1,matched,No DOI (repository); OpenAlex ID recorded
+38,Exclude,2024,W4405740940,10.62802/ndrm0a53,2024,article,1,matched,
+39,Include,2024,W4392190882,10.4018/979-8-3693-3226-9.ch010,2024,book-chapter,1,matched,
+40,Include,2026,W7163912216,10.5089/9798229045742.068,2026,article,1,matched,
+41,Include,2024,W4401521942,10.58496/mjcsc/2024/007,2024,article,1,matched,
+42,Exclude,2026,W7131208365,10.54254/2754-1169/2026.ld31794,2026,article,1,matched,
+43,Exclude,2025,W4410103963,10.32743/unitech.2025.132.3.19613,2025,article,1,matched,
+44,Include,2025,W4415812710,10.1080/19393555.2025.2575773,2025,article,1,matched,
+45,Include,2024,W7212088258,,2024,article,1,matched,No DOI (repository); OpenAlex ID recorded
+46,Exclude,2025,W4411309904,10.62225/2583049x.2025.5.3.4422,2025,article,1,matched,
+47,Include,2026,W7162862010,10.5281/zenodo.20467508,2026,article,1,matched,
+48,Include,2024,W4405086743,10.34190/icair.4.1.3194,2024,conference-paper,1,matched,
+49,Include,2024,W4399251802,10.48550/arxiv.2405.19524,2024,preprint,1,matched,
+50,Include,2024,W4404100445,10.70301/conf.sbs-jabr.2024.1/1.6,2024,conference-paper,1,matched,
+51,Include,2026,W7156308572,10.5281/zenodo.19805847,2026,preprint,1,matched,
+52,Include,2026,W7163219282,10.1109/icaiset66439.2026.11541747,2026,conference-paper,1,matched,
+53,Include,2023,W7134237633,10.15662/ijfist.2023.0603002,2023,article,1,matched,
+54,Include,2026,W7162666242,10.32447/20784643.33.2026.16,2026,article,1,matched,
+55,Include,2026,W7164141172,10.1117/12.3100740,2026,conference-paper,1,matched,
+56,Include,2026,W7220128509,,2026,article,1,matched,No DOI; OpenAlex ID recorded
+57,Exclude,2024,W4408302019,10.54660/.ijmrge.2024.5.1.1350-1356,2024,article,1,matched,
+58,Exclude,2025,W7131099147,10.1109/smart66937.2025.11389309,2025,conference-paper,1,matched,
+59,Exclude,2023,W4361023970,10.4018/978-1-6684-7207-1.ch006,2023,book-chapter,1,matched,
+60,Include,2024,W4393900885,10.48084/etasr.6911,2024,article,1,matched,

@@ -1,0 +1,44 @@
+link_id,tracker_row,short_ref,role_a09,framework,clause_id,a09_iso_listed,link_basis_v11,quote_anchor,claude_retrace_v11,note
+P01,1,Islam et al. 2025,D,AI RMF,MEASURE 2.9,A.6.2.7; A.8.2,evidenced,explainability and interpretability characteristics of the AI model,Supported,
+P02,1,Islam et al. 2025,D,CSF,ID.RA-01,,evidenced,identifies and prioritizes the most critical vulnerabilities,Supported,
+P03,2,Zeijlemaker et al. 2025,D,AI RMF,MEASURE 2.7,7 controls listed,rule-inferred,,,Abstract says nothing about the tool's own security; it does say 'address drifting AI-powered systems' which fits MEASURE 2.4 better
+P04,2,Zeijlemaker et al. 2025,D,CSF,DE.CM-01,,not in abstract,,,Abstract names deception-based defence and a kill-chain analysis; anomaly detection is not in the abstract (open-access full text not checked in this audit)
+P05,2,Zeijlemaker et al. 2025,D,CSF,DE.AE-02,,not in abstract,,,As P04
+P06,2,Zeijlemaker et al. 2025,D,CSF,RS.MA-01,,not in abstract,,,As P04
+P07,3,Jabbar et al. 2024,D,AI RMF,MEASURE 2.4,Cl. 9.1; A.6.2.6; A.6.2.8,rule-inferred,,,Abstract says nothing about monitoring the AI itself (also found in HS3 file 13)
+P08,3,Jabbar et al. 2024,D,CSF,ID.RA-04,,evidenced,proactive risk assessment,Partly,Impacts and likelihoods are not stated
+P09,3,Jabbar et al. 2024,D,CSF,DE.CM-01,,evidenced,real-time threat detection,Partly,Networks are not named
+P10,3,Jabbar et al. 2024,D,CSF,RS.MA-01,,evidenced,automated incident response,Supported,
+P11,4,Femi & Medugu 2025,D,AI RMF,MEASURE 2.4,A.6.2.6; A.6.2.8,rule-inferred,,,"Monitoring in the abstract is of networks, not of the AI"
+P12,4,Femi & Medugu 2025,D,AI RMF,MANAGE 2.4,A.9.4,evidenced (as a gap),with minimal human intervention,,The source shows the override mechanism is missing; not retraced as a control
+P13,4,Femi & Medugu 2025,D,CSF,DE.CM-01,,evidenced,"continuously monitor network environments, detect anomalies",Supported,
+P14,4,Femi & Medugu 2025,D,CSF,DE.AE-02,,evidenced,"detect anomalies, and predict potential vulnerabilities",Partly,Detection is stated; analysis of events is not
+P15,4,Femi & Medugu 2025,D,CSF,RS.MA-01,,evidenced,automate incident response processes,Supported,
+P16,5,Ouariach et al. 2026,D,AI RMF,MEASURE 2.4,A.6.2.6; A.6.2.8,rule-inferred,,,Abstract says nothing about monitoring the AI itself
+P17,5,Ouariach et al. 2026,D,CSF,DE.CM-01,,evidenced,more precise threat detection,Partly,Networks are not named
+P18,5,Ouariach et al. 2026,D,CSF,RS.MA-01,,evidenced,faster incident response capability,Partly,A capability is named; executing a response is not
+P19,5,Ouariach et al. 2026,D,CSF,RC.RP-01,,not in abstract,,,Abstract mentions cyber resilience only in general terms
+P20,18,Adabara et al. 2026,D,AI RMF,GOVERN 1.4,"Cl. 6.1.2, 6.1.3, 8.3",evidenced,each decision is auditable and policy-compliant,Supported,
+P21,18,Adabara et al. 2026,D,AI RMF,MEASURE 2.4,A.6.2.8,evidenced,enforces operational and ethical constraints,Partly,Enforcing rules on each decision is stated; monitoring behaviour over time is not
+P22,18,Adabara et al. 2026,D,CSF,DE.CM-01,,evidenced,policy-aware intrusion detection architecture,Partly,Tested on a stored dataset; live network monitoring is not stated
+P23,18,Adabara et al. 2026,D,CSF,PR.PS-04,,evidenced,each decision is auditable,Partly,Auditability is stated; log records for monitoring are not
+P24,8,Chodyka et al. 2026,O,AI RMF,GOVERN 1.6,A.4.2,rule-inferred,,,Abstract names shadow AI but not an AI inventory (indexed abstract is cut off); Assignment 09 listed A.2.2; A.4.2 for the whole row
+P25,8,Chodyka et al. 2026,O,AI RMF,GOVERN 1.2,A.2.2,evidenced,the need to build effective AI governance systems,Partly,A need is stated; integrating trustworthy-AI characteristics into policy is not
+P26,8,Chodyka et al. 2026,O,CSF,ID.AM-02,,not in abstract,,,
+P27,8,Chodyka et al. 2026,O,CSF,GV.PO-01,,evidenced,the need to build effective AI governance systems,Partly,As P25
+P28,8,Chodyka et al. 2026,O,CSF,PR.AT-01,,not in abstract,,,
+P29,6,Billiris et al. 2025,O,AI RMF,MEASURE 2.10,A.5.2; A.7.2; A.7.3,not checkable,,,No abstract in the index at audit time (2026-11-07); the published and arXiv records were merged without one
+P30,6,Billiris et al. 2025,O,CSF,PR.DS-01,,not checkable,,,As P29
+P31,6,Billiris et al. 2025,O,CSF,PR.DS-10,,not checkable,,,As P29
+P32,6,Billiris et al. 2025,O,CSF,PR.AT-01,,not checkable,,,As P29
+P33,17,Buscemi et al. 2025,O,AI RMF,MANAGE 2.4,A.9.4,not in abstract,,,Abstract describes the mapping method only; override and drift detection come from the open-access full text (not re-checked in this audit)
+P34,17,Buscemi et al. 2025,O,AI RMF,MEASURE 2.4,A.6.2.6,not in abstract,,,As P33
+P35,17,Buscemi et al. 2025,O,AI RMF,MEASURE 2.9,A.6.2.7,not in abstract,,,As P33
+P36,17,Buscemi et al. 2025,O,CSF,DE.CM-09,,not in abstract,,,As P33
+P37,52,Yadati et al. 2026,O,AI RMF,MEASURE 2.7,Broad,evidenced,We evaluate four principal attack categories,Supported,
+P38,52,Yadati et al. 2026,O,AI RMF,MEASURE 2.10,A.5.2; A.7.2; A.7.3,evidenced,"data poisoning, model inversion, and membership inference",Supported,
+P39,52,Yadati et al. 2026,O,CSF,ID.RA-01,,evidenced,a critical vulnerability surface,Partly,A vulnerability class is named; identifying and recording vulnerabilities is not
+P40,52,Yadati et al. 2026,O,CSF,PR.DS-10,,evidenced,"compromise the confidentiality, integrity, and availability of user data",Partly,The threat to data is stated; protecting data in use is implied by the defences
+P41,14,Erukude et al. 2026,A,CSF,ID.RA-03,,not checkable,,,No abstract in the index at audit time
+P42,21,Umair et al. 2026,A,CSF,ID.RA-03,,evidenced,"sophisticated phishing, deepfake-enabled social engineering",Supported,
+P43,50,Chimamiwa 2024,A,CSF,ID.RA-03,,evidenced,emerging AI- and ML-driven cyber threats faced by enterprises,Supported,
