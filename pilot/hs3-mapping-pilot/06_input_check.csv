@@ -1,0 +1,9 @@
+tracker_row,short_ref,source_type,peer_reviewed,openalex_id,doi,abstract_retrieved_utc,abstract_chars,abstract_sha256_16,access_note
+9,Mannam & Kuai 2026,Conference abstract (AMCIS TREO),Unclear (short abstract track),W7166272523,none,2026-11-07T02:53:06Z,1042,bbeeeff67aa9ef0e,Public abstract only; no DOI
+16,Nolte et al. 2025,Conference paper (ACM FAccT),Yes,W4411550499,10.1145/3715275.3732020,2026-11-07T02:53:06Z,1023,a4fb9cb94f2e37ac,ACM full text not used (paywalled for me)
+25,Bhagat et al. 2026,Book,Unclear,W7160401745,10.70593/978-93-7185-561-7,2026-11-07T02:53:06Z,7745,cbc71cbafec6e6e1,Long book-level abstract covering many controls
+33,George 2024,Book chapter (IGI Global),Unclear,W4405812637,10.4018/979-8-3373-1102-9.ch008,2026-11-07T02:53:06Z,548,856b4bce71ba51e2,Short generic abstract; full text paywalled
+40,Adrian et al. 2026,Policy note (IMF),No (institutional),W7163912216,10.5089/9798229045742.068,2026-11-07T02:53:06Z,1250,d1347d421dcdbdcf,Public
+47,Abdurahmanli 2026,Repository article (Zenodo),No,W7162862010,10.5281/zenodo.20467508,2026-11-07T02:53:06Z,1762,40c021a955468dc1,Public
+48,Lekota 2024,Conference paper (ICAIR),Yes,W4405086743,10.34190/icair.4.1.3194,2026-11-07T02:53:06Z,1778,e7efa9bd34e7d38c,Public
+49,Qi et al. 2024,Preprint (arXiv),No,W4399251802,10.48550/arxiv.2405.19524,2026-11-07T02:53:06Z,1228,7d61d5d7b7ef2deb,Public

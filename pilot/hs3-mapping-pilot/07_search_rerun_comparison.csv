@@ -1,0 +1,22 @@
+logged_rank_2026-10-29,tracker_row,short_ref,rerun_rank_2026-11-07,change,note
+1,25,Bhagat et al. 2026,1,0,
+2,26,Obodiak et al. 2025,2,0,
+3,27,Uzoka et al. 2024,3,0,
+4,28,Gael 2026,4,0,
+5,29,Dharmireddi et al. 2025,5,0,
+6,30,Pipyros 2026,6,0,
+7,31,Karri et al. 2025,7,0,
+8,32,Bozic 2023,8,0,
+9,33,George 2024,9,0,
+10,34,Salehi Farsani 2025,12,-2,Pushed down by new record and a swap with Vaddi
+11,35,Vaddi 2025,11,0,
+12,36,El Haji & Aitmoussa 2025,13,-1,
+13,37,Sukhi et al. 2026,14,-1,Now carries an OpenAlex ID (W7221579403); still no DOI
+14,38,Oguz 2024,15,-1,
+15,39,Mingo 2024,17,-2,
+16,40,Adrian et al. 2026,18,-2,
+17,41,Ali et al. 2024,16,+1,
+18,42,Long 2026,19,-1,
+19,43,Uralov et al. 2025,20,-1,
+20,44,Almeida 2025,23,-3,
+-,-,Serzhankyzy 2026 (10.1109/sist61674.2026.11596278),10,new,Had no abstract in the index on 2026-10-29 so it was skipped; it now has one and would be screened at rank 10

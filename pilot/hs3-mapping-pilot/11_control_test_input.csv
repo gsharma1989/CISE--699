@@ -1,0 +1,15 @@
+tracker_row,short_ref,codable,codable_reason,role,second_role,framework,clause_id,link_basis,quote_anchor,confidence,coder,coded_utc
+9,Mannam & Kuai 2026,Y,Names intrusion detection and network anomaly detection,D,,AI RMF,NONE,no anchor: rule D asks for a tool-trust clause but the abstract says nothing about the tool's own trustworthiness,,,Claude (Pass A),2026-11-07T02:55Z
+9,Mannam & Kuai 2026,Y,,D,,CSF,DE.CM-1,evidenced,network anomaly detection,H,Claude (Pass A),2026-11-07T02:55Z
+16,Nolte et al. 2025,Y,Robustness and cybersecurity duties to be measured under Art. 15(2),O,,AI RMF,MEASURE 2.7,evidenced,,H,Claude (Pass A),2026-11-07T02:55Z
+16,Nolte et al. 2025,Y,,O,,CSF,NONE,no CSF 2.0 clause in the dictionary addresses robustness of an AI model,,,Claude (Pass A),2026-11-07T02:55Z
+25,Bhagat et al. 2026,Y,Names IDS/IPS; SIEM; automated triage; IAM; watermarking (many controls),D,O;A,AI RMF,MEASURE 2.4,evidenced,"concept drift, adversarial manipulation, and operational limits",M,Claude (Pass A),2026-11-07T02:55Z
+25,Bhagat et al. 2026,Y,,D,O;A,CSF,DE.AE-02,evidenced,AI-powered Security Information and Event Management (SIEM),H,Claude (Pass A),2026-11-07T02:55Z
+33,George 2024,Y,"Borderline: names threat detection and response automation, but only as categories",D,,AI RMF,NONE,no anchor: abstract says nothing about the tool's own trustworthiness,,,Claude (Pass A),2026-11-07T02:55Z
+33,George 2024,Y,,D,,CSF,DE.CM-01,evidenced,"AI technologies improve threat detection, response automation",L,Claude (Pass A),2026-11-07T02:55Z
+40,Adrian et al. 2026,Y,Names limiting breach blast radius and response and recovery capacity,A,O,AI RMF,NONE,rule A: the AI RMF covers an organization's own AI (expected NONE),,,Claude (Pass A),2026-11-07T02:55Z
+40,Adrian et al. 2026,Y,,A,O,CSF,RC.RP-01,evidenced,robust response and recovery capacity,M,Claude (Pass A),2026-11-07T02:55Z
+47,Abdurahmanli 2026,N,Policy-level discussion; no concrete organizational control named,D,A,-,-,-,,,Claude (Pass A),2026-11-07T02:55Z
+48,Lekota 2024,Y,Names training and continuous monitoring of AI systems,O,,AI RMF,MEASURE 2.4,evidenced,training and continuous monitoring of AI systems,H,Claude (Pass A),2026-11-07T02:55Z
+48,Lekota 2024,Y,,O,,CSF,DE.CM-09,evidenced,training and continuous monitoring of AI systems,M,Claude (Pass A),2026-11-07T02:55Z
+49,Qi et al. 2024,N,Proposes a conceptual reference framework; no concrete control named,O,,-,-,-,,,Claude (Pass A),2026-11-07T02:55Z

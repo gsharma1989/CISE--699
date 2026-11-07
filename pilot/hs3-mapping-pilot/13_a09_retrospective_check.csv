@@ -1,0 +1,7 @@
+tracker_row,short_ref,role_in_A09,a09_ai_rmf_link,anchor_in_public_abstract,link_basis_under_codebook_v1.0,note
+1,Islam et al. 2025,D,MEASURE 2.9,Y (explainability and interpretability of AI models),evidenced,
+2,Zeijlemaker et al. 2025,D,MEASURE 2.7 (tool only),N,rule-inferred,Abstract discusses AI in cyber risk management; nothing on the security of the AI tool itself
+3,Jabbar et al. 2024,D,MEASURE 2.4 (tool only),N,rule-inferred,Abstract describes AI risk prediction and detection; nothing on monitoring the AI itself
+4,Femi & Medugu 2025,D,MEASURE 2.4; MANAGE 2.4,Partly (minimal human intervention),MEASURE 2.4 rule-inferred; MANAGE 2.4 evidenced as a gap,"Monitoring in the abstract is of networks, not of the AI"
+5,Ouariach et al. 2026,D,MEASURE 2.4 (tool only),N,rule-inferred,Abstract mentions ethics and privacy but not monitoring the AI
+18,Adabara et al. 2026,D,GOVERN 1.4; MEASURE 2.4,Y (policy layer checks and logs each decision),evidenced,

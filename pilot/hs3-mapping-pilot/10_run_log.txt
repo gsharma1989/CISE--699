@@ -1,0 +1,13 @@
+Note: re-run after correcting the coded_utc timestamps in 08 (no change to coding content)
+run1 start 2026-11-07T02:59:14Z
+run2 start 2026-11-07T02:59:14Z
+run3 (clean copy, python -I, different folder) start 2026-11-07T02:59:14Z
+
+aafcfd2ec54164348740c0e8834146ac2843811938d5dba0bb4c24ef652d0180  run1/mapped_records.csv
+28abb2f47fd41cb2305322412106e2464521ae2ddc2e7ae259c87cdfcc4bab2a  run1/validation_report.txt
+aafcfd2ec54164348740c0e8834146ac2843811938d5dba0bb4c24ef652d0180  run2/mapped_records.csv
+28abb2f47fd41cb2305322412106e2464521ae2ddc2e7ae259c87cdfcc4bab2a  run2/validation_report.txt
+aafcfd2ec54164348740c0e8834146ac2843811938d5dba0bb4c24ef652d0180  run3/mapped_records.csv
+28abb2f47fd41cb2305322412106e2464521ae2ddc2e7ae259c87cdfcc4bab2a  run3/validation_report.txt
+
+IDENTICAL: all three runs byte-identical

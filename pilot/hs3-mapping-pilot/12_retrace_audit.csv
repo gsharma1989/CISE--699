@@ -1,0 +1,9 @@
+tracker_row,framework,clause_id,anchor_present,clause_in_dictionary,clause_wording_supports_link,reason,retraced_by,retraced_utc
+9,CSF,DE.CM-01,Y,Y,Supported,"Anchor names network anomaly detection; clause is network monitoring for adverse events.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+16,AI RMF,MEASURE 2.7,Y,Y,Supported,"Anchor states resilience requirement for AI systems; clause is evaluation of AI security and resilience. Paper informs measurement under Art. 15(2).",Claude (self-retrace; not independent),2026-11-07T02:56Z
+25,AI RMF,MEASURE 2.4,Y,Y,Partly,"Anchor names problems (drift, manipulation), not the monitoring control itself; monitoring is implied, not stated.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+25,CSF,DE.AE-02,Y,Y,Supported,"AI-powered SIEM analyses security events; clause is analysis of adverse events.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+33,CSF,DE.CM-01,Y,Y,Partly,"Anchor is generic ('threat detection'); network monitoring is the closest clause but the source never says networks.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+40,CSF,RC.RP-01,Y,Y,Partly,"Source asks for response and recovery capacity and for containing breach spread; containment (RS.MI) is not in the dictionary, so the nearest recovery clause was used.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+48,AI RMF,MEASURE 2.4,Y,Y,Supported,"Anchor names continuous monitoring of AI systems; clause is monitoring the AI system in production.",Claude (self-retrace; not independent),2026-11-07T02:56Z
+48,CSF,DE.CM-09,Y,Y,Supported,"AI systems are software and runtime environments; clause is monitoring software and runtime environments.",Claude (self-retrace; not independent),2026-11-07T02:56Z
