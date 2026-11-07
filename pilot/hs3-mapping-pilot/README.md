@@ -37,4 +37,4 @@ The search re-run (`07`) needs internet access to the OpenAlex API; its query st
 | E12 | 12_retrace_audit.csv | Link-by-link retrace (self-check, not independent) |
 | E13 | 13_a09_retrospective_check.csv | Assignment 09 D-role links re-checked against the same rule |
 | E14 | 14_codebook_v1.1.md | Revised procedure |
-| E15 | 15_role_coding_check.md | My blind role coding vs Pass A (R4) |
+| E15 | 15_role_coding_check.md | My blind role coding vs Pass A (R4): 4 of 8, fails |

@@ -15,8 +15,13 @@ If the abstract is generic and an open-access full text exists, read the full te
 Code **controls, not sources**. A source can give up to 3 control units, chosen by how prominent they are in the text. Each unit gets its own role and links.
 *Why: T#25 names more than eight controls; one code per framework lost most of them.*
 
-## Step 3: Role of AI (unchanged)
-D = defence tool; O = own AI at risk or governed; A = attacker's tool. Note a second role if present.
+## Step 3: Role of AI [v1.1 rules rewritten after R4]
+Code the role **for each control unit**, not for the whole source. Ask: *whose AI is it, and what is the named control doing?*
+- **D**: the organization uses AI as part of the control, to protect its systems (e.g. AI-based intrusion detection).
+- **O**: the control protects or governs an AI system the organization owns or runs (e.g. monitoring a model in production). Protecting ordinary IT systems is **not** O.
+- **A**: the control responds to attackers using AI (e.g. defences against AI-made phishing).
+Tie-break: code the role tied to the named control; note any other role as second. Non-codable sources get no role ("-").
+*Why: R4 failed (4 of 8, kappa 0.18). Disagreements came from mixed-role sources (T#25), two readings of O (T#40, T#47), and sources with no named control (T#47, T#49) (pilot file 15).*
 
 ## Step 4: Clause links [v1.1 link basis]
 - Choose clauses only from the clause dictionary.
@@ -32,4 +37,4 @@ Add a clause only by copying it word for word from NIST's own page, with the dat
 *Why: T#40 asks for containing breach spread; with no containment clause in the dictionary, it was forced to the nearest recovery clause (RC.RP-01, retrace = Partly).*
 
 ## Step 6: Evidence and retrace (unchanged, plus second reader)
-Quote anchor under 15 words; confidence H/M/L; retrace each link as Supported / Partly / Not supported. **[v1.1]** A second reader (the student) codes role and codability blind for every unit in a 25% sample; agreement is reported.
+Quote anchor under 15 words; confidence H/M/L; retrace each link as Supported / Partly / Not supported. **[v1.1]** A second reader (the student) codes role and codability blind for every unit in a 25% sample; agreement is reported. Role coding is re-tested on a fresh sample of 8 (R4 at least 7 of 8) before any role-of-AI pattern is reported.
