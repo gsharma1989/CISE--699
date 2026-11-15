@@ -34,7 +34,7 @@ The review asks what published research shows about tracing AI-related cybersecu
 - AI assistance: Claude (Anthropic) proposed screening decisions for rows 13-60, wrote the scripts and summaries, and drafted text. Every use is logged in the AI-use section of each memo. Commit history on GitHub shows the order of work; audit plans were committed before checks were run.
 
 ## 5. Prerequisites
-Python 3.10 or later with `openpyxl` 3.1 (tested: Python 3.13.16, openpyxl 3.1.5, Linux). Step 1 needs network access once, to install openpyxl; Steps 2-4 need none. Excel or LibreOffice is only needed to read the tracker by eye. On Windows, use `py -m venv .venv` and `.venv\Scripts\activate` in Step 1 and `certutil -hashfile <file> SHA256` instead of `sha256sum` (not tested).
+Python 3.10 or later with `openpyxl` 3.1 (tested: Python 3.13.16, openpyxl 3.1.5, Linux). Step 1 needs network access once, to install openpyxl; Steps 2-4 need none. Excel or LibreOffice is only needed to read the tracker by eye. On Windows, use `py -m venv .venv` and `.venv\Scripts\activate` in Step 1 and `certutil -hashfile <file> SHA256` instead of `sha256sum`. The Windows steps were run on 2026-11-15 with Python 3.15.2 (without a virtual environment); all outputs matched (audit/a11/04).
 
 ## 6. Steps (run from the repository root)
 ```
