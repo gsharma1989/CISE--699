@@ -13,5 +13,5 @@
 | Assignment 09 rule-inferred links | Re-coded 2026-11-07 (Hard Stop 5): of 43 links, 22 anchored in a public abstract, 5 rule-inferred, 10 not in the abstract, 5 not checkable; my retrace: 1 of 22 Supported. Display 2 is reported as candidate links (mapping/a09_proof_map_links.csv). Open: full-text coding. |
 | Missing identifiers | Resolved 2026-11-15: T#7 DOI, T#11 AIS URL, T#24 arXiv ID recorded; T#23 has no verifiable volume, pages or DOI and is cited by URL (audit/a11/01). |
 | Citation validation | Done 2026-11-15: 34 references checked, 5 corrected, Umair et al. (T#21) partly verified (audit/a11/02, 03). |
-| Independent human reproduction | Pending: I will rerun the README steps on my own Windows laptop from release a11-evidence-v1 and record the result in audit/a11/04. |
+| Independent human reproduction | Done 2026-11-15: I reran the README steps on my own Windows laptop (Python 3.15.2) from release a11-evidence-v1; ALL OUTPUTS MATCH (audit/a11/04, 04a). Run by the author, so not fully independent; a run by a classmate would be stronger. |
 | ISO/IEC 42001 lists in Assignment 09 | For 9 of 16 AI RMF links Display 2 showed only some crosswalk controls with no stated rule (audit/hs5/07, D5). Full lists or a written selection rule needed before Assignment 11. |
