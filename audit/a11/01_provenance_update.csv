@@ -1,0 +1,8 @@
+tracker_row,item_from_hs5,identifier_found,source_checked,checked_utc,status
+7,No identifier (not indexed in OpenAlex or Crossref),DOI 10.34293/management.v13iS1-Mar.10766,Publisher page shanlaxjournals.in (article 10766) and its PDF,2026-11-15,Resolved
+11,No identifier (AIS eLibrary; excluded source),https://aisel.aisnet.org/sigdsa2025/6 (no DOI issued),AIS eLibrary record (Proceedings of the 2025 Pre-ICIS SIGDSA Symposium; 8 authors as in the tracker),2026-11-15,Resolved (URL; no DOI exists)
+24,No identifier (arXiv; excluded source),arXiv:2509.20411 (v2 2025-09-30),arXiv abstract page (5 authors as in the tracker),2026-11-15,Resolved
+23,Publisher DOI 10.18775/ijied.1849-7551-7020.2015.121.2001 not machine-checked,None verifiable: the DOI is not found in OpenAlex; the publisher PDF prints DOI blank and Volume X / Issue X / Pages xx-xx,https://researchleap.com/ai-in-cybersecurity-2026/ and its PDF,2026-11-15,Corrected: cite by URL; volume/issue/pages removed (tracker row 23 Source Type updated)
+19,Web article without DOI,https://cmr.berkeley.edu/2025/04/cyber-risk-governance-crg-in-the-age-of-ai-driven-open-innovation/,Publisher page (Chon Abraham; April 1 2025; CMR Insights),2026-11-15,Resolved
+6,No abstract in OpenAlex after record merge (D7),arXiv:2510.02357 shows the abstract,arXiv abstract page,2026-11-15,Resolved (abstract reachable at arXiv for re-checking links)
+14,No abstract in OpenAlex after record merge (D7),arXiv:2601.03304 shows the abstract and lists DOI 10.1007/978-3-032-10783-1_14,arXiv abstract page and Springer chapter page,2026-11-15,Resolved

@@ -2,7 +2,7 @@
 
 Gaurav Sharma, Harrisburg University of Technology. Supervisor: Dr. Majid Shaalan.
 Method: PRISMA 2020 systematic literature review with narrative synthesis and a clause-level governance mapping.
-Release: **hs5-rc2** (Hard Stop 5 submission, 2026-11-07): release candidate `hs5-rc1` after its audit and corrections. Earlier frozen states: `v1.0-baseline`, `hs3-thesis-v2.0`, `hs5-rc1`.
+Release: **a11-evidence-v1** (2026-11-15): the frozen evidence version for the Assignment 11 thesis draft. It is `hs5-rc2` plus the provenance and citation checks asked for in the Hard Stop 5 feedback (see `audit/a11/`). Earlier frozen states: `v1.0-baseline`, `hs3-thesis-v2.0`, `hs5-rc1`, `hs5-rc2`.
 
 ## 1. Purpose
 The review asks what published research shows about tracing AI-related cybersecurity threats to specific controls and then to named clauses in NIST AI RMF 1.0, ISO/IEC 42001 and NIST CSF 2.0. This repository holds everything needed to examine how the findings so far were obtained: the protocol, every screening decision, the clause-mapping records, the scripts that rebuild the numbers, and the audit records. It is a research record, not software; the scripts only recount and cross-check the records.
@@ -21,8 +21,9 @@ The review asks what published research shows about tracing AI-related cybersecu
 | `screening/Screening_Tracker_Full_Scale.xlsx` | All 60 screening decisions with reason, source, query and rank; Progress Summary; Spot-Check Log | Rows 1-12 screened by me; rows 13-60 proposed by Claude under my rule and reviewed by me (audit check A4) |
 | `screening/screening-pilot.xlsx` | Smoke Test 2 pilot (5 records) | Assignment 5 |
 | `mapping/a09_proof_map_links.csv` | Assignment 09 Display 2 as data: 43 links, each with link basis under Codebook v1.1 and a short quote anchor | Built in Hard Stop 5 from the Assignment 09 memo |
-| `analysis/*.py` | Scripts that rebuild counts, check integrity, compare ISO lists, and run the sensitivity check | Written by Claude; reviewed and run as described in `audit/hs5/` |
+| `analysis/*.py` | Scripts that rebuild counts, check integrity, compare ISO lists, run the sensitivity check, and verify outputs against the expected values | Written by Claude; reviewed and run as described in `audit/hs5/` |
 | `pilot/hs3-mapping-pilot/` | Hard Stop 3 clause-mapping pilot (E01-E17) | See its README |
+| `audit/a11/` | Pre-Assignment 11 checks: provenance update (01), citation validation (02), corrected reference list (03), human reproduction log (04), corrections log (05), expected outputs | This release |
 | `audit/hs5/` | Hard Stop 5 audit: plan (00), review sheets and results (01-03, 06, 08), provenance (04), fresh-run logs and expected outputs (05), discrepancy log (07), audit record (09), feedback response log (10) | This checkpoint; start with `09_audit_record.md` |
 | `logs/` | Risk log, known-issues log, changelog | Kept since Assignment 5 |
 | `evidence/`, `deliverables/` | Screenshots, the Assignment 09 chart, PDFs of earlier submissions | Earlier checkpoints |
@@ -42,9 +43,16 @@ python3 analysis/rebuild_counts.py screening/Screening_Tracker_Full_Scale.xlsx o
 python3 analysis/check_tracker.py screening/Screening_Tracker_Full_Scale.xlsx out    # Step 3: integrity_report.txt
 python3 analysis/compare_a09_iso.py mapping/a09_proof_map_links.csv pilot/hs3-mapping-pilot/04_crosswalk_ai-rmf_to_iso42001.csv pilot/hs3-mapping-pilot/05_annexA_controls.csv out   # Step 4a
 python3 analysis/sensitivity.py out/tracker_rows.csv mapping/a09_proof_map_links.csv out   # Step 4b
-sha256sum out/*
+python3 analysis/verify_outputs.py out audit/a11/expected_outputs.txt   # Step 5: prints MATCH for each file
 ```
-Expected results for this release (hs5-rc2): `counts.txt` reports logged=60, included=45, excluded=15, included_not_peer_reviewed=12; Security controls 12, Security risks 9, AI-related threats 8, Governance 7, Compliance 5, Privacy 2, Human/organizational 2; `integrity_report.txt` reports 0 warnings. Expected SHA-256 values are in `audit/hs5/05_expected_outputs_rc2.txt` (and `05_expected_outputs_rc1.txt` for the audited candidate).
+Expected results for this release (a11-evidence-v1): `counts.txt` reports logged=60, included=45, excluded=15, included_not_peer_reviewed=12; Security controls 12, Security risks 9, AI-related threats 8, Governance 7, Compliance 5, Privacy 2, Human/organizational 2; `integrity_report.txt` reports 0 warnings. Expected SHA-256 values are in `audit/a11/expected_outputs.txt`; Step 5 compares them for you. Only `tracker_rows.csv` differs from hs5-rc2, because two tracker cells were corrected (`audit/a11/05_corrections_log.md`).
+
+### Windows, step by step (for a reviewer without Linux)
+1. Install Python 3.10+ from python.org (tick "Add Python to PATH").
+2. On GitHub, open Releases, choose **a11-evidence-v1**, download **Source code (zip)** and unzip it.
+3. Open the unzipped folder, click the address bar, type `cmd` and press Enter.
+4. Run: `py -m pip install openpyxl==3.1.5`
+5. Run the four commands of Step 2-4 above with `py` instead of `python3`, then `py analysis/verify_outputs.py out audit/a11/expected_outputs.txt`. It should print **ALL OUTPUTS MATCH**.
 
 ## 7. Restrictions and safe access
 - **Abstracts and full texts** are copyrighted and are not stored here. Each source is identified by DOI or OpenAlex ID (`audit/hs5/04_provenance_openalex.csv`), so a reviewer can retrieve the same abstract from OpenAlex or the publisher. Quote anchors are under 15 words.
@@ -53,4 +61,4 @@ Expected results for this release (hs5-rc2): `counts.txt` reports logged=60, inc
 - **No personal or organizational data** is used. Google Scholar was used only through its normal web interface; when it blocked paging, searching moved to OpenAlex instead of working around the block.
 
 ## 8. Known limitations
-Single human reviewer with AI support (risk R-02); summaries used in my blind reviews were written by Claude; most sources were read at abstract level, and abstracts rarely support clause-level links (R-09); about a quarter of included sources are not peer reviewed and 15 of 45 are rated low weight (audit/hs5/08); ISO matches are provisional; search results drift over time (R-10); three sources still lack an identifier (T#7, 11, 24). See `audit/hs5/07_discrepancy_log.md`, `logs/risk-log.md` and `logs/know-issues.md`.
+Single human reviewer with AI support (risk R-02); summaries used in my blind reviews were written by Claude; most sources were read at abstract level, and abstracts rarely support clause-level links (R-09); about a quarter of included sources are not peer reviewed and 15 of 45 are rated low weight (audit/hs5/08); ISO matches are provisional; search results drift over time (R-10); Umair et al. (T#21) authors only partly verified. See `audit/hs5/07_discrepancy_log.md`, `audit/a11/05_corrections_log.md`, `logs/risk-log.md` and `logs/know-issues.md`.

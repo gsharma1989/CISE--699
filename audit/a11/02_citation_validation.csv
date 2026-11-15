@@ -1,0 +1,36 @@
+ref_no,short_ref,identifier,checked_against,result,correction_for_thesis
+1,Abraham 2025,CMR Insights URL,Publisher page,Verified,
+2,Adabara et al. 2026,10.3389/frai.2026.1755696,OpenAlex record,Verified,
+3,Adrian et al. 2026,10.5089/9798229045742.068,OpenAlex record,Verified,
+4,Albulayhi & Alkhalifah 2026,10.3390/su18062986,OpenAlex record,Verified,
+5,Almeida 2025,10.1080/19393555.2025.2575773,OpenAlex record,Verified,
+6,Ayanbode et al. 2024,10.54660/.IJMRGE.2024.5.1.1350-1356,OpenAlex record,Verified,
+7,Billiris et al. 2026,10.1007/978-3-032-24810-7_41,Springer chapter page; OpenAlex,Corrected,"Authors are printed without middle initials: Billiris, G., Gill, A., & Bandara, M.; book Intelligent Computing (CC 2026), LNNS vol. 1951, pp. 678-700"
+8,Buscemi et al. 2025,arXiv:2512.13907,arXiv page,Verified,Optional: note v3 (2026-04-03)
+9,Chege & Wainaina 2026,(none verifiable),Publisher page and PDF; OpenAlex (DOI not found),Corrected,"Remove 12(1), 7-14 and the DOI; cite by URL https://researchleap.com/ai-in-cybersecurity-2026/"
+10,Chimamiwa 2024,10.70301/conf.sbs-jabr.2024.1/1.6,OpenAlex record,Verified,
+11,Chodyka et al. 2026,10.35808/ersj/4376,OpenAlex record,Verified,
+12,Erukude et al. 2026,10.1007/978-3-032-10783-1_14,Springer chapter page; arXiv page; OpenAlex,Corrected,"Now published: In Data Science and Applications (ICDSA 2025), LNNS vol. 1723, pp. 185-197, Springer; cite the DOI instead of arXiv"
+13,Femi & Medugu 2025,10.54473/IJTRET.2025.9210,OpenAlex record,Verified,
+14,Harguess et al. 2026,10.1117/12.3100740,OpenAlex record,Verified,
+15,Islam et al. 2025,10.1007/s40860-025-00253-3,OpenAlex record,Corrected,"Add the issue: 11(3), Article 12"
+16,Jabbar et al. 2024,10.1109/IJCC64742.2024.10847294,OpenAlex record,Verified,
+17,Kaur et al. 2023,10.1016/j.inffus.2023.101804,OpenAlex record,Verified,
+18,Long 2026,10.54254/2754-1169/2026.LD31794,OpenAlex record,Verified,
+19,Mokgathi & Ogundele 2026,10.1007/978-3-032-13384-7_6,OpenAlex record,Verified,
+20,Narayanan 2023,10.15662/IJFIST.2023.0603002,OpenAlex record,Verified,
+21,NIST 2023 (AI RMF 1.0),10.6028/NIST.AI.100-1,OpenAlex record,Verified,
+22,NIST 2024 (CSF 2.0),10.6028/NIST.CSWP.29,OpenAlex record (lists 2023 for the draft); NIST publication number,Verified,Keep 2024 (final CSWP 29)
+23,NIST n.d. (crosswalk),airc.nist.gov PDF,The PDF itself,Verified,Title and n.d. confirmed (no date printed)
+24,Nolte et al. 2025,10.1145/3715275.3732020,OpenAlex record,Corrected,Add pages 283-295
+25,Ouariach et al. 2026,10.1201/9788743808077-4,OpenAlex record,Verified,
+26,Pelekis et al. 2025,10.1007/s10462-025-11147-4,OpenAlex record,Verified,
+27,Priem et al. 2022,arXiv:2205.01833,OpenAlex record,Verified,
+28,Shea et al. 2017,10.1136/bmj.j4008,OpenAlex record,Verified,
+29,Umair et al. 2026,10.5281/zenodo.22895975,OpenAlex (metadata incomplete); publisher page behind a login,Partly verified,DOI resolves to the right record (one of three Zenodo DOIs); authors could not be re-checked today
+30,Yadati et al. 2026,10.1109/ICAISET66439.2026.11541747,OpenAlex record,Verified,
+31,Zeijlemaker et al. 2025,10.3390/systems13100835,OpenAlex record,Verified,
+32,Page et al. 2021,10.1136/bmj.n71,OpenAlex record,Verified,
+33,Thabane et al. 2010,10.1186/1471-2288-10-1,OpenAlex record,Verified,
+34,Cohen 1960,10.1177/001316446002000104,OpenAlex record,Verified,
+T1-T60,All 55 tracker rows with an OpenAlex record,see audit/hs5/04_provenance_openalex.csv,OpenAlex: first author and year,Verified for 52; 3 explained,"T#6 year 2025 was the preprint, now 2026 (tracker updated); T#15 and T#21 have incomplete OpenAlex author data, checked on the publisher PDF (T#15) and left as recorded (T#21)"
