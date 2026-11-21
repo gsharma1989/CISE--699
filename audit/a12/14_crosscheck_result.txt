@@ -1,0 +1,11 @@
+OK   logged 80: record=True thesis=True deck=True
+OK   included 56: record=True thesis=True deck=True
+OK   not peer reviewed 17: record=True thesis=True deck=True
+OK   full text 28 links: record=True thesis=True deck=True
+OK   6 S / 14 P / 7 NS / 1 gap: record=True thesis=True deck=True
+OK   Q1 7/8 kappa 0.60: record=True thesis=True deck=True
+OK   role 4/6 kappa 0.43: record=True thesis=True deck=True
+OK   5 of 41 roles changed: record=True thesis=True deck=n/a
+OK   PRISMA 30/8/2/2: record=True thesis=True deck=True
+OK   tiers 11/24/21: record=True thesis=True deck=True
+CROSS-CHECK PASSED

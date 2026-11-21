@@ -1,40 +1,41 @@
 # Research materials: AI-Driven Cybersecurity Risk Management (CISE 699 thesis)
 
-Gaurav Sharma, Harrisburg University of Technology. Supervisor: Dr. Majid Shaalan.
+Gaurav Sharma, Harrisburg University of Science and Technology. Supervisor: Dr. Majid Shaalan.
 Method: PRISMA 2020 systematic literature review with narrative synthesis and a clause-level governance mapping.
-Release: **a11-evidence-v1** (2026-11-15): the frozen evidence version for the Assignment 11 thesis draft. It is `hs5-rc2` plus the provenance and citation checks asked for in the Hard Stop 5 feedback (see `audit/a11/`). Earlier frozen states: `v1.0-baseline`, `hs3-thesis-v2.0`, `hs5-rc1`, `hs5-rc2`.
+Release: **a12-evidence-v1** (2026-11-20): the evidence version for the Assignment 12 (Hard Stop 6) near-final thesis. It is `a11-evidence-v1` plus the A12 work asked for in the A11 feedback (`audit/a12/`, start with `00_plan.md` and `10_response_matrix.md`), Round 4 tracker rows 61-80, and three new scripts (`role_retest.py`, `fig_tiers.py`, `fig_chain.py`). Earlier frozen states: `v1.0-baseline`, `hs3-thesis-v2.0`, `hs5-rc1`, `hs5-rc2`, `a11-evidence-v1`.
 
 ## 1. Purpose
-The review asks what published research shows about tracing AI-related cybersecurity threats to specific controls and then to named clauses in NIST AI RMF 1.0, ISO/IEC 42001 and NIST CSF 2.0. This repository holds everything needed to examine how the findings so far were obtained: the protocol, every screening decision, the clause-mapping records, the scripts that rebuild the numbers, and the audit records. It is a research record, not software; the scripts only recount and cross-check the records.
+The review asks what published research shows about tracing AI-related cybersecurity threats to specific controls and then to named clauses in NIST AI RMF 1.0, ISO/IEC 42001 and NIST CSF 2.0. This repository holds everything needed to examine how the findings were produced and to rebuild every count.
 
 ## 2. Principal claims and where to check them
-| Claim (where it was made) | Records | How to check | Status after the Hard Stop 5 audit |
+| Claim (thesis A12) | Records | How to check | Status |
 |---|---|---|---|
-| C1. 60 sources logged, 45 included, 15 excluded; included sources by category; 13 of 45 not peer reviewed (Assignment 09, Section 2 and Display 1) | `screening/Screening_Tracker_Full_Scale.xlsx` | Step 2 below rebuilds every number into `counts.txt` | Reproduced exactly from hs5-rc1. After one correction (T#14 is now peer reviewed) the non-peer-reviewed count is 12 |
-| C2. A threat-to-control-to-clause chain can be built for 10 sources, and the framework that holds the clause depends on the role of AI (Assignment 09, Display 2) | `mapping/a09_proof_map_links.csv` (one row per link, with quote anchor and link basis), `pilot/hs3-mapping-pilot/03_clause_dictionary.csv` (NIST wording), `04_crosswalk...csv` (NIST crosswalk), `audit/hs5/06_clause_retrace_A6.csv` | Steps 3-4 below; open a row, compare the quote anchor with the clause wording | Downgraded: roles agree (13 of 13) but only 22 of 43 links are anchored in a public abstract and my retrace found 1 of 22 fully supported. Display 2 is a set of candidate links, not evidence |
-| C3. The mapping procedure's mechanical steps repeat exactly, but clause links and role codes missed the pilot thresholds (Hard Stop 3) | `pilot/hs3-mapping-pilot/` (pre-registration, coding, three runs, retrace) | `pilot/hs3-mapping-pilot/README.md` | Unchanged |
+| C1. 80 logged, 56 included, 24 excluded; 17 included not peer reviewed | `screening/Screening_Tracker_Full_Scale.xlsx` | Step 2 rebuilds `counts.txt` | Settled; rows 61-80 proposed by Claude and reviewed by the author on 2026-11-20 (not blind), tiers reviewed by the author |
+| C2. Full-text clause links: 6 of 28 Supported, 14 Partly, 7 Not supported, 1 evidenced gap | `audit/a12/01_supported_rule.md`, `03_fulltext_coding_claude.csv` | Read the rule, then the anchors | Provisional (author review, no independent second coder) |
+| C3. Second reader, fresh sample: control named 7/8 (kappa 0.60); role 4/6 (kappa 0.43) | `audit/a12/05_*` | `python audit/a12/05_agreement.py audit/a12/05_fresh_coding_sanjeev.csv audit/a12/05_fresh_coding_claude.csv` | Settled as measured |
+| C4. The role-of-AI pattern is not supported as a finding | `audit/a12/12_role_retest.md` | Step 4c, `out/role_retest.txt` | Settled (negative result) |
+| C5. No peer-reviewed source traces threat -> control -> numbered clause with evidence | `audit/a12/08_atlas_*` | Read the chain check | Settled as narrowed |
+| C6. AMSTAR 2 where it fits; PRISMA 2020 checklist | `audit/a12/06_*`, `07_*` | Read the files | Settled |
 
 ## 3. Inventory
 | Folder or file | What it is | Origin |
 |---|---|---|
-| `protocol/` | Review protocol (Assignment 1) | Hand-written by me |
-| `screening/Screening_Tracker_Full_Scale.xlsx` | All 60 screening decisions with reason, source, query and rank; Progress Summary; Spot-Check Log | Rows 1-12 screened by me; rows 13-60 proposed by Claude under my rule and reviewed by me (audit check A4) |
-| `screening/screening-pilot.xlsx` | Smoke Test 2 pilot (5 records) | Assignment 5 |
-| `mapping/a09_proof_map_links.csv` | Assignment 09 Display 2 as data: 43 links, each with link basis under Codebook v1.1 and a short quote anchor | Built in Hard Stop 5 from the Assignment 09 memo |
-| `analysis/*.py` | Scripts that rebuild counts, check integrity, compare ISO lists, run the sensitivity check, and verify outputs against the expected values | Written by Claude; reviewed and run as described in `audit/hs5/` |
-| `pilot/hs3-mapping-pilot/` | Hard Stop 3 clause-mapping pilot (E01-E17) | See its README |
-| `audit/a11/` | Pre-Assignment 11 checks: provenance update (01), citation validation (02), corrected reference list (03), human reproduction log (04), corrections log (05), expected outputs | This release |
-| `audit/hs5/` | Hard Stop 5 audit: plan (00), review sheets and results (01-03, 06, 08), provenance (04), fresh-run logs and expected outputs (05), discrepancy log (07), audit record (09), feedback response log (10) | This checkpoint; start with `09_audit_record.md` |
-| `logs/` | Risk log, known-issues log, changelog | Kept since Assignment 5 |
-| `evidence/`, `deliverables/` | Screenshots, the Assignment 09 chart, PDFs of earlier submissions | Earlier checkpoints |
+| `protocol/` | Review protocol (Assignment 1) | Written by me |
+| `screening/Screening_Tracker_Full_Scale.xlsx` | All 80 screening decisions with reason, source, query and rank | Rows 1-12 by me; rows 13-60 proposed by Claude and reviewed by me; rows 61-80 proposed by Claude and reviewed by me (not blind) |
+| `mapping/a09_proof_map_links.csv` | 43 proof-map links at Hard Stop 5 | Hard Stop 5 |
+| `analysis/*.py` | Scripts: counts, integrity, ISO lists, sensitivity, role re-test, figures, output check | Written by Claude; outputs checked by hash; rerun by a person other than the author (Run 3) |
+| `pilot/hs3-mapping-pilot/` | Hard Stop 3 clause-mapping pilot | See its README |
+| `audit/hs5/`, `audit/a11/` | Hard Stop 5 audit; pre-A11 checks and Runs 1-2 | Earlier checkpoints |
+| `audit/a12/` | A12: rule (01), full-text coding (02-04), second reader (05), PRISMA (06), AMSTAR 2 (07), MITRE ATLAS round (08), changed-results audit (09), response matrix (10), Run 3 (11), role re-test (12), Claude's unedited thesis draft (13), completed sheets (`sheets/`), expected outputs | This release |
+| `logs/` | Risk log, known issues, changelog | Kept since Assignment 5 |
 
 ## 4. Provenance
-- Searches: Google Scholar (rows 1-12, Oct 2026), targeted web searches (rows 13-24), OpenAlex queries A-D (rows 25-60; query text and rank in the tracker). Dates are in the tracker.
+- Searches: Google Scholar (rows 1-12, Oct 2026), targeted web searches (rows 13-24), OpenAlex queries A-D (rows 25-60; query text and rank in the tracker) and Query E "MITRE ATLAS" (rows 61-80; snapshot of ranks 1-50 in `audit/a12/08_atlas_snapshot.csv`, retrieved 2026-11-20). Dates are in the tracker.
 - Clause wording: NIST AI Resource Center (AI RMF Core) and NIST CSF 2.0 Implementation Examples, copied word for word into `03_clause_dictionary.csv`. ISO/IEC 42001 controls come only from NIST's AI RMF-to-ISO/IEC FDIS 42001 crosswalk.
-- AI assistance: Claude (Anthropic) proposed screening decisions for rows 13-60, wrote the scripts and summaries, and drafted text. Every use is logged in the AI-use section of each memo. Commit history on GitHub shows the order of work; audit plans were committed before checks were run.
+- AI assistance: Claude (Anthropic) proposed screening decisions for rows 13-80, made the first pass of the A12 full-text coding and AMSTAR 2 sheet, wrote the scripts and summaries, and drafted text. Every use is logged in the AI-use section of each memo. Commit history on GitHub shows the order of work; audit plans were committed before checks were run.
 
 ## 5. Prerequisites
-Python 3.10 or later with `openpyxl` 3.1 (tested: Python 3.13.16, openpyxl 3.1.5, Linux). Step 1 needs network access once, to install openpyxl; Steps 2-4 need none. Excel or LibreOffice is only needed to read the tracker by eye. On Windows, use `py -m venv .venv` and `.venv\Scripts\activate` in Step 1 and `certutil -hashfile <file> SHA256` instead of `sha256sum`. The Windows steps were run on 2026-11-15 with Python 3.15.2 (without a virtual environment); all outputs matched (audit/a11/04).
+Python 3.10 or later with `openpyxl` 3.1.5. Tested on Linux (Python 3.13) and Windows 11 (Python 3.15.2, Runs 2 and 3). Step 1 needs network access once; the other steps need none. The figure scripts (optional Step 6) also need `matplotlib`.
 
 ## 6. Steps (run from the repository root)
 ```
@@ -43,16 +44,20 @@ python3 analysis/rebuild_counts.py screening/Screening_Tracker_Full_Scale.xlsx o
 python3 analysis/check_tracker.py screening/Screening_Tracker_Full_Scale.xlsx out    # Step 3: integrity_report.txt
 python3 analysis/compare_a09_iso.py mapping/a09_proof_map_links.csv pilot/hs3-mapping-pilot/04_crosswalk_ai-rmf_to_iso42001.csv pilot/hs3-mapping-pilot/05_annexA_controls.csv out   # Step 4a
 python3 analysis/sensitivity.py out/tracker_rows.csv mapping/a09_proof_map_links.csv out   # Step 4b
-python3 analysis/verify_outputs.py out audit/a11/expected_outputs.txt   # Step 5: prints MATCH for each file
+python3 analysis/role_retest.py audit/a12/03_fulltext_coding_claude.csv mapping/a09_proof_map_links.csv out   # Step 4c (new in A12)
+python3 analysis/verify_outputs.py out audit/a12/expected_outputs.txt   # Step 5: prints MATCH for each file
+python3 analysis/fig_tiers.py . out/fig_tiers.png && python3 analysis/fig_chain.py out/fig_chain.png   # Step 6 (optional, needs matplotlib)
 ```
-Expected results for this release (a11-evidence-v1): `counts.txt` reports logged=60, included=45, excluded=15, included_not_peer_reviewed=12; Security controls 12, Security risks 9, AI-related threats 8, Governance 7, Compliance 5, Privacy 2, Human/organizational 2; `integrity_report.txt` reports 0 warnings. Expected SHA-256 values are in `audit/a11/expected_outputs.txt`; Step 5 compares them for you. Only `tracker_rows.csv` differs from hs5-rc2, because two tracker cells were corrected (`audit/a11/05_corrections_log.md`).
+Expected results for this release: `counts.txt` reports logged=80, included=56, excluded=24, included_not_peer_reviewed=17; `integrity_report.txt` reports 80 rows and 0 warnings; `role_retest.txt` reports 5 of 41 roles changed and no D control with a Supported AI RMF link. Step 5 compares six files with `audit/a12/expected_outputs.txt` and should print **ALL OUTPUTS MATCH**. (The A11 values are still in `audit/a11/expected_outputs.txt`; three files differ by design, see `audit/a12/09_changed_results_audit.md`.)
 
 ### Windows, step by step (for a reviewer without Linux)
 1. Install Python 3.10+ from python.org (tick "Add Python to PATH").
-2. On GitHub, open Releases, choose **a11-evidence-v1**, download **Source code (zip)** and unzip it.
-3. Open the unzipped folder, click the address bar, type `cmd` and press Enter.
-4. Run: `py -m pip install openpyxl==3.1.5`
-5. Run the four commands of Step 2-4 above with `py` instead of `python3`, then `py analysis/verify_outputs.py out audit/a11/expected_outputs.txt`. It should print **ALL OUTPUTS MATCH**.
+2. On GitHub, open Releases, choose **a12-evidence-v1**, download **Source code (zip)**. Right-click the zip, choose **Extract All**, then open the extracted folder until you see `README.md`, `analysis` and `screening`.
+3. **Open a command window in that folder:** click once in the address bar at the top of the File Explorer window (where the folder path is shown), delete the text, type `cmd` and press Enter. A black window opens already inside the folder.
+4. Check Python: type `py --version` and press Enter. It should print a version number.
+5. Run: `py -m pip install openpyxl==3.1.5`
+6. Run the commands of Steps 2 to 4c above one at a time, with `py` instead of `python3` (copy one line, right-click in the black window to paste, press Enter).
+7. Run `py analysis/verify_outputs.py out audit/a12/expected_outputs.txt`. It should print **ALL OUTPUTS MATCH**.
 
 ## 7. Restrictions and safe access
 - **Abstracts and full texts** are copyrighted and are not stored here. Each source is identified by DOI or OpenAlex ID (`audit/hs5/04_provenance_openalex.csv`), so a reviewer can retrieve the same abstract from OpenAlex or the publisher. Quote anchors are under 15 words.
@@ -61,4 +66,4 @@ Expected results for this release (a11-evidence-v1): `counts.txt` reports logged
 - **No personal or organizational data** is used. Google Scholar was used only through its normal web interface; when it blocked paging, searching moved to OpenAlex instead of working around the block.
 
 ## 8. Known limitations
-Single human reviewer with AI support (risk R-02); summaries used in my blind reviews were written by Claude; most sources were read at abstract level, and abstracts rarely support clause-level links (R-09); about a quarter of included sources are not peer reviewed and 15 of 45 are rated low weight (audit/hs5/08); ISO matches are provisional; search results drift over time (R-10); Umair et al. (T#21) authors only partly verified. See `audit/hs5/07_discrepancy_log.md`, `audit/a11/05_corrections_log.md`, `logs/risk-log.md` and `logs/know-issues.md`.
+AI-assisted screening and coding with limited independent human checking (the 28 full-text verdicts have no independent second coder; Round 4 decisions were reviewed by the author, not blind); five mapped sources had no legal free full text; licensed databases were not searched; only Round 4 has a saved search snapshot; ISO matches are second-hand; Runs 2 and 3 used the same computer. See the thesis, Chapter 6, and `logs/know-issues.md`.

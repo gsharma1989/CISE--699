@@ -1,0 +1,2 @@
+03_fulltext_coding_claude.csv saved 2026-11-20T15:48Z UTC, before any human verdict on full-text links.
+Amendment A1 to 01_supported_rule.md, written during this first pass and before any human verdict: when a clause names several actions (for example 'evaluated and documented'), one stated action applied to the clause's object is enough for Supported; the missing actions are noted.

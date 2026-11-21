@@ -1,0 +1,27 @@
+links=43 full_text_links=28
+role changed vs Assignment 09 (per-control, full text): 5 of 41 coded links
+  P03 T#2 MEASURE 2.7: D -> O
+  P20 T#18 GOVERN 1.4: D -> O
+  P21 T#18 MEASURE 2.4: D -> O
+  P23 T#18 PR.PS-04: D -> O
+  P41 T#14 ID.RA-03: A -> O
+
+verdicts by fresh role and framework (S=Supported P=Partly NS=Not supported gap=evidenced gap none=not evidenced)
+[all links]
+  role D AI RMF: P=1, NS=1, gap=1, none=2
+  role D CSF: S=1, P=11, none=1
+  role O AI RMF: S=4, P=6, NS=1
+  role O CSF: S=1, P=6, NS=4
+  role A AI RMF: no links
+  role A CSF: P=1
+[full-text links only]
+  role D AI RMF: NS=1, gap=1
+  role D CSF: S=1, P=5
+  role O AI RMF: S=4, P=4, NS=1
+  role O CSF: S=1, P=5, NS=3
+  role A AI RMF: no links
+  role A CSF: no links
+
+refutation check 1 - D control with Supported AI RMF link: none
+refutation check 2 - sources with O controls but no Supported/Partly AI RMF link: ['T#14']
+links whose control is coded A: ['P42']

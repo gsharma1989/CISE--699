@@ -1,0 +1,11 @@
+Q1 codability: 7 of 8 agree, kappa 0.60
+  Q1 disagreement T#35 Sanjeev N Claude Y
+Q3 main role (sources both coded Y, n=6): 4 of 6 agree, kappa 0.43
+  Role disagreement T#37 Sanjeev O, O, O | Claude D | D
+  Role disagreement T#44 Sanjeev A, O | Claude O
+
+Agreement above is measured on the original, independent answers (before discussion).
+Resolutions (05_resolutions.csv), decided by Gaurav Sharma and Sanjeev Tiwari on 2026-11-20:
+R1 T#35 Q1 -> Y (full-text rule); R2 T#37 role -> O; R3 T#44 role -> O.
+After resolution, two items follow Claude's first pass (R1, R3) and one follows Sanjeev's answer (R2); original answers are preserved in 05_fresh_coding_sanjeev.csv and 05_fresh_coding_claude.csv.
+Against the pre-set target (role agreement at least 7 of 8), the independent role agreement (4 of 6, kappa 0.43) does not meet the target.

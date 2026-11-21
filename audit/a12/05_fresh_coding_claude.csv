@@ -1,0 +1,9 @@
+tracker_row,q1_specific_control,anchor,q2_controls,q3_roles,basis
+T#20,Y,"enabling continuous auditing, better risk prioritisation",Continuous auditing with AI | Human in the loop | Differentiated AI risk controls,D | O | O,Full text partly read (journal-isi.org)
+T#23,Y,Maintain Human-in-the-Loop controls for high-impact automated decisions.,Human-in-the-loop for automated decisions | Adopt ISO/IEC 42001 | SOAR automation,O | O | D,Full text (researchleap.com)
+T#28,Y,AI-powered threat detection systems,"AI threat detection | Governance, ethics committees, human-AI supervision | Zero Trust",D | O | - (not AI),Abstract only (Zenodo)
+T#35,Y,Adversarial training (25%) enhances model robustness,Encryption and adversarial training | AI security audits | AI-specific security protocols,O | O | O,Full text (samvaktijournals.com)
+T#37,Y (borderline),"vulnerability assessment metrics like CVSS scores, EPSS probabilities",CVSS/EPSS vulnerability scoring | Structured cyber intelligence,D | D,Abstract only (OpenAlex)
+T#39,N,integrating governance controls and creating customized risk management requirements,-,-,Abstract only (reconstructed from OpenAlex)
+T#44,Y,"Innovative practices, such as adversarial simulations",Adversarial simulations (MITRE ATLAS),O,Abstract only (reconstructed from OpenAlex)
+T#51,Y,"defense must be distributed across all ten, with explicit acceptance that residual risk remains.",Layered defences against prompt injection | Controls matrix based on published efficacy,O | O,Abstract only (Zenodo)

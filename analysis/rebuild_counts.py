@@ -4,7 +4,7 @@ Usage:
   python3 analysis/rebuild_counts.py screening/Screening_Tracker_Full_Scale.xlsx <out_dir>
 
 Reads the 'Screening Tracker' tab, freezes each row's ID (the tracker shows IDs with the
-formula =ROW()-1 from row 13 on), and writes:
+formula =ROW()-1 from row 13 on; rows 1-80 are now plain numbers), and writes:
   tracker_rows.csv  - one line per logged source, IDs as plain numbers
   counts.txt        - totals, included sources by category, by screening round,
                       and by peer-review flag (rule below), with and without
@@ -12,7 +12,8 @@ formula =ROW()-1 from row 13 on), and writes:
 No network access. Deterministic: sorted output, fixed line endings.
 
 Peer-review flag rule (written for this audit, applied to the Source Type column):
-  not peer reviewed = Source Type starts with Preprint, Repository article, Policy note,
+  not peer reviewed = Source Type starts with Preprint, Repository (article, dataset or
+  software; widened from 'Repository article' in A12, no change for rows 1-60), Policy note,
   Practitioner, Conference abstract, or Book ( (a whole book, not a chapter).
 """
 import csv
@@ -25,7 +26,7 @@ import openpyxl
 CATEGORIES = ["AI-related threats", "Privacy risks", "Security risks",
               "Human/organizational risks", "Governance risks", "Compliance risks",
               "Security controls"]
-NPR = re.compile(r"^(Preprint|Repository article|Policy note|Practitioner|Conference abstract|Book \()")
+NPR = re.compile(r"^(Preprint|Repository|Policy note|Practitioner|Conference abstract|Book \()")
 FIELDS = ["id", "title", "authors", "year", "database_source", "source_type",
           "category", "decision", "reason", "date_screened", "round", "peer_review_flag"]
 
@@ -35,7 +36,9 @@ def screening_round(i):
         return "R1 Hard Stop 4 batch (Google Scholar)"
     if i <= 24:
         return "R2 targeted web searches"
-    return "R3 OpenAlex queries"
+    if i <= 60:
+        return "R3 OpenAlex queries"
+    return "R4 MITRE ATLAS update query (A12)"
 
 
 def load(path):

@@ -1,0 +1,14 @@
+tracker_row,source,open_full_text,where_or_why_not,coding_basis
+1,Islam et al. 2025,No,Springer page not retrievable (cookie error); open access not confirmed,abstract-only
+2,Zeijlemaker et al. 2025,Yes (partly),"https://www.mdpi.com/2079-8954/13/10/835 (CC BY); Sections 1-5 read, Discussion/Conclusion not retrieved",full text
+3,Jabbar et al. 2024,No,IEEE Xplore page empty to the reader; paywalled,abstract-only
+4,Femi & Medugu 2025,Yes,https://www.trendytechjournals.com/ijtret/volume9/issue2-10.pdf,full text
+5,Ouariach et al. 2026,No,River Publishers chapter; DOI returned an error,abstract-only
+6,Billiris et al. 2026,Yes (preprint),https://arxiv.org/html/2510.02357v1 (Springer chapter paywalled; preprint wording may differ),full text (arXiv v1)
+8,Chodyka et al. 2026,Yes,"https://ersj.eu/journal/4376 (PDF download, pp. 595-605)",full text
+14,Erukude et al. 2026,Yes (preprint),https://arxiv.org/html/2601.03304,full text (arXiv)
+17,Buscemi et al. 2025,Yes,"https://arxiv.org/html/2512.13907 (v3, 2026-04-03); Sections 1-4 read",full text (arXiv v3)
+18,Adabara et al. 2026,Yes,https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1755696/full,full text
+21,Umair et al. 2026,No,Zenodo PDF had no extractable text; record lists only 'Research Consortium Archive' as creator,abstract-only
+50,Chimamiwa 2024,Yes,https://research.sbs.edu/sbsrc/SBSRC24_Paper06.pdf,full text
+52,Yadati et al. 2026,No,IEEE Xplore page empty to the reader; paywalled,abstract-only

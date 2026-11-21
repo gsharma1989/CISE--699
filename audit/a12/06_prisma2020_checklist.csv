@@ -1,0 +1,43 @@
+item,section,checklist_item,status,thesis_location,note
+1,Title,Identify the report as a systematic review,Met,Title page,Title says 'A Systematic Review'.
+2,Abstract,PRISMA 2020 for Abstracts,Partly met,Abstract,"Objectives, eligibility, sources, dates, appraisal, synthesis, results, limitations, funding and registration are stated. Risk-of-bias method is named only briefly because of length."
+3,Rationale,Rationale in context of existing knowledge,Met,"1.1, 2.6",
+4,Objectives,Explicit statement of objectives or questions,Met,1.2,Main question and three sub-questions.
+5,Eligibility criteria,Inclusion and exclusion criteria and grouping,Met,3.5,One written rule; seven categories; charter boundaries.
+6,Information sources,All sources searched and date last searched,Met,"3.3, Display 1","Google Scholar, targeted web searches, OpenAlex queries A-E; last search 2026-11-20 (Query E)."
+7,Search strategy,Full search strategies for all databases,Partly met,3.3; record screening/ and audit/a12/08,"OpenAlex strings A-E are saved, with ranks. Round 2 targeted searches cannot be repeated exactly. The original 151-record ATLAS string was not saved."
+8,Selection process,"How decisions were made, how many reviewers, automation",Met,3.5,Author screened rows 1-12; Claude proposed decisions for rows 13-80; author reviewed all of 13-60 (38 blind). Rows 61-80 await author review (Appendix C).
+9,Data collection process,"Methods to collect data, reviewers, automation",Met,"3.7, 3.8",Claude coded full-text links first; author reviewed (not blind); second human reader coded a fresh sample of 8 independently.
+10a,Data items: outcomes,Outcomes sought and definitions,Met,3.7,"Data items: threat, control, framework clause, link basis, support verdict (rule v1.2), role of AI. No effectiveness outcomes were reported by sources."
+10b,Data items: other variables,Other variables (study characteristics),Met,"3.5, 3.6","Year, source type, peer-review flag, category, tier."
+11,Study risk of bias assessment,"Methods to assess risk of bias, reviewers, tools",Partly met,"3.6, Display 2",Three-tier quality rule for all sources; adapted AMSTAR 2 for review-type sources. No design-specific bias tool for primary studies.
+12,Effect measures,Effect measures for each outcome,Not applicable,3.1,No quantitative synthesis; the review maps and counts links.
+13a,Synthesis methods: eligibility,Which studies were eligible for each synthesis,Met,"3.1, 3.5",45 Round 1-3 sources for mapping and role coding; 56 for corpus counts; 11 Round 4 sources for the gap test only.
+13b,Synthesis methods: data preparation,Handling of missing data or conversions,Met,3.7,Links without readable full text keep their abstract-level verdicts and are labelled.
+13c,Synthesis methods: tabulation,Methods to tabulate or display results,Met,"3.7, Chapter 4 displays",
+13d,Synthesis methods: synthesis,Methods to synthesize results and rationale,Met,3.1,Narrative synthesis (Popay et al.) with counted links.
+13e,Synthesis methods: heterogeneity,Methods to explore heterogeneity,Partly met,4.4.4,Explored by role of AI and by peer-review subgroup; no statistical heterogeneity.
+13f,Synthesis methods: sensitivity,Sensitivity analyses,Met,"3.8, 4.4.3, 4.4.4",sensitivity.py; full-text vs abstract verdicts.
+14,Reporting bias assessment,Methods to assess risk of bias due to missing results,Not met,6,No method used. Publication and indexing bias are discussed only as limitations (licensed databases not searched).
+15,Certainty assessment,Methods to assess certainty in the body of evidence,Partly met,"4.5, Display 12",Status labels (Settled / Provisional / Open) with stated criteria; no GRADE-CERQual.
+16a,Study selection results,"Numbers screened and included, ideally with a flow diagram",Met,Display 4,PRISMA-style flow with update round R4.
+16b,Excluded studies,"Studies that seemed to meet criteria but were excluded, and why",Met,3.5; tracker Spot-Check Log; audit/a12/08,Boundary cases and R4 exclusions with reasons.
+17,Study characteristics,Cite each included study and present its characteristics,Met,Appendix A; tracker,Every source cited by tracker row [T#n]; tracker holds characteristics.
+18,Risk of bias in studies,Risk of bias assessments for each study,Met,"Figure 1, Display 2; record 08_quality_appraisal.csv, 07_review_appraisal.csv",
+19,Results of individual studies,"For each study, summary results",Partly met,"Displays 8, 9; record 03_fulltext_coding_claude.csv","Per-link verdicts are in the record, not all printed in the thesis."
+20a,Results of syntheses: characteristics,Summarize characteristics and risk of bias among contributing studies,Met,4.1-4.4,
+20b,Results of syntheses: statistical,Results of all statistical syntheses,Not applicable,,
+20c,Results of syntheses: heterogeneity,Results of investigations of heterogeneity,Partly met,4.4.4,Role-of-AI pattern reported as provisional.
+20d,Results of syntheses: sensitivity,Results of sensitivity analyses,Met,"4.4.3, 4.4.4, Displays 9, 11",
+21,Reporting biases,Assessments of risk of bias due to missing results,Not met,6,Not assessed (see item 14).
+22,Certainty of evidence,Certainty or confidence for each outcome,Partly met,Display 12 (status of findings),"Own status labels, not a formal certainty framework."
+23a,Discussion: interpretation,General interpretation in context of other evidence,Met,5.1,
+23b,Discussion: limitations of evidence,Limitations of the evidence,Met,6,
+23c,Discussion: limitations of review,Limitations of the review processes,Met,6,
+23d,Discussion: implications,"Implications for practice, policy and research",Met,5.3,
+24a,Registration,Registration information or statement that not registered,Met (statement),3.2,Not registered in PROSPERO or OSF; stated. The protocol and audit plans were committed to GitHub before use.
+24b,Protocol,"Where the protocol can be accessed, or that none was prepared",Met,"3.2, Appendix A",Assignment 01 protocol and pre-registered plans in the record.
+24c,Amendments,Amendments to registration or protocol,Met,"3.4, Display 1",
+25,Support,Sources of financial or non-financial support,Met,3.9,No funding. Non-financial: Claude (AI assistant) use disclosed; co-worker second reader.
+26,Competing interests,Declare competing interests,Met,3.9,None.
+27,"Availability of data, code and other materials",What is publicly available and where,Met,"3.2, Appendix A","GitHub release a12-evidence-v1 (tracker, scripts, outputs, audit files)."

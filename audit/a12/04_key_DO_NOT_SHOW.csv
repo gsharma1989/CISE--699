@@ -1,0 +1,48 @@
+part,sheet_no,link_id_or_row,control,claude_code
+1,1,P36,,Partly
+1,2,P04,,Partly
+1,3,P06,,Not supported
+1,4,P29,,Supported
+1,5,P12,,Evidenced gap
+1,6,P15,,Partly
+1,7,P21,,Partly
+1,8,P14,,Partly
+1,9,P35,,Supported
+1,10,P32,,Partly
+1,11,P27,,Partly
+1,12,P25,,Partly
+1,13,P41,,Partly
+1,14,P28,,Partly
+1,15,P43,,Not supported
+1,16,P03,,Supported
+1,17,P33,,Supported
+1,18,P22,,Partly
+1,19,P05,,Partly
+1,20,P34,,Partly
+1,21,P23,,Supported
+1,22,P20,,Partly
+1,23,P13,,Supported
+1,24,P30,,Not supported
+2,1,17,Monitoring drift in the detector's input traffic,O
+2,2,18,A tunable governance layer trades policy strictness against detection accuracy,O
+2,3,14,Adversarial training of models,O
+2,4,6,Incident response procedures for AI privacy breaches,O
+2,5,17,Engineers and operators can override the AI intrusion detector,O
+2,6,8,Access control and oversight mechanisms for AI systems,O
+2,7,8,Comprehensive AI governance systems with risk procedures,O
+2,8,4,AI automates incident response processes,D
+2,9,4,AI predicts potential vulnerabilities before they are exploited,D
+2,10,4,AI systems continuously monitor network environments and detect anomalies,D
+2,11,50,Adversarial training of defensive models,D
+2,12,8,Developing employees' digital skills,O
+2,13,50,Threat hunting with AI and ML,D
+2,14,18,Model predictions are checked against policy rules before they are executed,O
+2,15,2,Safeguarding model inputs and enforcing model usage boundaries,O
+2,16,2,Deceptive defence structures that create controlled compromised systems,D
+2,17,14,Human-in-the-loop review,D
+2,18,50,Explainable AI to see whether models were manipulated,O
+2,19,2,Autonomous defence systems that use AI to analyse telemetry,D
+2,20,6,Monitoring for AI-specific privacy patterns,O
+2,21,18,All system decisions are recorded in an audit ledger,O
+2,22,17,An AI-based system for detecting cyberattacks,D
+2,23,14,ML-based anomaly and zero-day detection,D

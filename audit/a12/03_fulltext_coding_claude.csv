@@ -1,0 +1,44 @@
+link_id,tracker_row,clause_id,location,exact_control,anchor,anchor_type,claude_verdict_v12,role_fresh_claude,note
+P01,1,MEASURE 2.9,abstract,AI model ranks vulnerabilities and explains its ranking,explainability and interpretability characteristics of the AI model,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P02,1,ID.RA-01,abstract,AI ranks vulnerabilities,identifies and prioritizes the most critical vulnerabilities,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P03,2,MEASURE 2.7,"Sec. 4.3, two-step attacks","Validation, integrity testing and red-teaming of AI-based tools (recommended)","continuous validation, model integrity testing, and red-teaming of AI-based tools",authors' own (recommendation),Supported,O,Was rule-inferred at abstract level; full text states the evaluation action and object. 'Documented' not stated (amendment A1)
+P04,2,DE.CM-01,Sec. 2.1 Simple Cyber Threats,Detection described generically,Detection involves the prompt monitoring and identification of cybersecurity events or anomalies,literature/framework description (ibid.),Partly,D,Capped at Partly: reports framework wording; networks not named
+P05,2,DE.AE-02,Sec. 4.2,AI forensic analysis after attacks,AI also conducts forensic analysis to assess damage and strengthen future defenses,literature-review only,Partly,D,Capped at Partly: cited work
+P06,2,RS.MA-01,Sec. 3.2,Coordination with federal agencies in the Colonial Pipeline case,Colonial's IT and security teams collaborated with federal agencies such as the FBI,incident narrative from cited reporting,Not supported,-,"Narrative of one incident, not a control the authors propose"
+P07,3,MEASURE 2.4,abstract,-,-,rule-inferred,Not evidenced (abstract-only),D,No full text
+P08,3,ID.RA-04,abstract,Proactive risk assessment,proactive risk assessment,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P09,3,DE.CM-01,abstract,Real-time detection,real-time threat detection,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P10,3,RS.MA-01,abstract,Automated response,automated incident response,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P11,4,MEASURE 2.4,full text searched,-,none found (only a cited claim that robustness must be tested),none,Not supported,D,No monitoring of the AI tool itself
+P12,4,MANAGE 2.4,Abstract p.106; Future Directions p.109,Automation with minimal human intervention,with minimal human intervention,authors' own,Evidenced gap,D,Counterpoint p.109: 'human input remains crucial for understanding contextual nuances' (attribution ambiguous); no override mechanism described
+P13,4,DE.CM-01,Abstract p.106,AI-driven continuous network monitoring,"AI systems can continuously monitor network environments, detect anomalies",authors' own,Supported,D,
+P14,4,DE.AE-02,"Results, Case Studies p.109",Analysis of transaction data (cited case),AI systems were able to analyze large volumes of transactional data,literature-review only,Partly,D,"Capped at Partly; object is transaction data, not adverse events"
+P15,4,RS.MA-01,Abstract p.106,Automated incident response,AI can automate incident response processes,authors' own,Partly,D,Response stated; plan execution and third-party coordination not stated
+P16,5,MEASURE 2.4,abstract,-,-,rule-inferred,Not evidenced (abstract-only),D,No full text
+P17,5,DE.CM-01,abstract,AI detection,more precise threat detection,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P18,5,RS.MA-01,abstract,Faster response capability,faster incident response capability,abstract,Partly (my HS5 verdict; abstract-only),D,No full text
+P19,5,RC.RP-01,abstract,-,-,not in abstract,Not evidenced (abstract-only),D,No full text
+P20,18,GOVERN 1.4,Sec. 4.4,Governance policies written as rules,"Policies are defined using a YAML schema that specifies conditions, actions, and supporting metadata.",authors' own,Partly,O,Policies stated; link to organizational risk priorities not stated
+P21,18,MEASURE 2.4,Sec. 4.6,Continuous audit of each model decision,The audit process operates continuously as part of the inference pipeline.,authors' own,Partly,O,"Behaviour monitored continuously, but only on a stored dataset (CICIDS2017), not in production"
+P22,18,DE.CM-01,Sec. 4.2; Sec. 5.1,Intrusion detection on network traffic,raw network traffic is collected and normalized,authors' own,Partly,D,Evaluated on a stored dataset: 'conducted using the CICIDS2017 dataset'; no live monitoring
+P23,18,PR.PS-04,Sec. 4.3; Sec. 4.6,Audit ledger of every decision,All decisions are recorded in the audit ledger,authors' own,Supported,O,Log generation stated; continuous use stated in 4.6
+P24,8,GOVERN 1.6,full text searched,-,none found (nearest: 'organisations need to ensure adequate control over the AI systems they use'),none,Not supported,O,No AI inventory
+P25,8,GOVERN 1.2,"Sec. 4, p.603",AI governance systems with security policies,organisations should aim to build comprehensive AI governance systems encompassing security policies,authors' own,Partly,O,Policies stated; trustworthy-AI characteristics not stated
+P26,8,ID.AM-02,full text searched,-,none found,none,Not supported,O,
+P27,8,GV.PO-01,"Sec. 5, p.604",AI governance with risk procedures,requires the implementation of comprehensive AI governance systems encompassing risk management procedures,authors' own,Partly,O,"Need for policy stated; established, communicated and enforced not stated"
+P28,8,PR.AT-01,"Sec. 4, p.603",Staff skills development,It is also crucial to develop employees' digital skills,authors' own,Partly,O,Personnel and skills stated; security purpose not stated
+P29,6,MEASURE 2.10,Sec. 6 Conclusion,Taxonomy to assess AI privacy risk (proposed use),help organisations systematically assess AI privacy risks,authors' own (proposed),Supported,O,"arXiv v1 wording; a proposed use of the taxonomy, not evaluated"
+P30,6,PR.DS-01,"Sec. 4.1, Table 3",Encryption and access control named as missing,"storage of data without adequate security measures such as encryption, access controls",risk definition,Not supported,O,"Names a risk, not a control the authors propose"
+P31,6,PR.DS-10,full text searched,-,none found,none,Not supported,O,
+P32,6,PR.AT-01,Sec. 4.5,Human-centred privacy controls,human-centred privacy controls require commensurate attention as technical measures,authors' own,Partly,O,Training not named
+P33,17,MANAGE 2.4,"Sec. 3.1, R1 table (M1.1)",Manual override,a human operator can take control of the AI system,authors' own,Supported,O,"Paper maps the EU AI Act, not NIST; functional match"
+P34,17,MEASURE 2.4,"Sec. 3.9, R9 table (M9.7)",Post-market monitoring,Continuous verification and early detection of anomalies or new hazards,authors' own,Partly,O,"Monitoring stated; the AI system as object is implied by the table, not stated in the anchor"
+P35,17,MEASURE 2.9,"Sec. 4, Table 12 (T4.2)",Model documentation,"All models used are accompanied by documentation on training data, assumptions, and risks",authors' own,Supported,O,Documented stated; explained and validated not stated (amendment A1)
+P36,17,DE.CM-09,"Sec. 3.7, R7.2 table (M7.2)",Tamper-evident logging and review,"detailed, tamper-evident logs of system operations are maintained and reviewed",authors' own,Partly,O,Logging and review; detection of adverse events not stated
+P37,52,MEASURE 2.7,abstract,Evaluation of attacks and defences,We evaluate four principal attack categories,abstract,Partly (my HS5 verdict; abstract-only),O,No full text
+P38,52,MEASURE 2.10,abstract,Privacy attacks on models,"data poisoning, model inversion, and membership inference",abstract,Partly (my HS5 verdict; abstract-only),O,No full text
+P39,52,ID.RA-01,abstract,Vulnerability class,a critical vulnerability surface,abstract,Partly (my HS5 verdict; abstract-only),O,No full text
+P40,52,PR.DS-10,abstract,Threat to data,"compromise the confidentiality, integrity, and availability of user data",abstract,Not supported (my HS5 verdict; abstract-only),O,No full text
+P41,14,ID.RA-03,Sec. 3.3 (cited [16]),Detect adversarial inputs,Identify and block adversarial inputs or escalate them for human review,literature-review only,Partly,O,Capped at Partly. The paper's own controls are adversarial training (O) and ML detection (D); none responds to attackers' AI as such (A)
+P42,21,ID.RA-03,abstract,Threats named,"sophisticated phishing, deepfake-enabled social engineering",abstract,Partly (my HS5 verdict; abstract-only),A,No full text
+P43,50,ID.RA-03,"p.73, Efficacy of current practices",Threats named,Cyber threat actors are leveraging AI and ML techniques,authors' own,Not supported,-,"Names a threat, not a control. The paper's own controls are threat hunting (D), adversarial training (D/O) and explainable AI (O)"

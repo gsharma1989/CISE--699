@@ -12,3 +12,10 @@
 | 2026-11-07 | Hard Stop 5 (artifact hardening): audit plan committed first; release candidate hs5-rc1 (research README, analysis scripts, Assignment 09 proof map as data) tagged and fresh-run twice from the tag (outputs identical and as expected). Audit found 9 discrepancies (audit/hs5/07); fixes in hs5-rc2: tracker IDs frozen, T#14 corrected to peer reviewed, two spot-check notes confirmed, README corrected. My blind reviews: 38/38 screening, 13/13 roles, 1/22 links Supported. |
 | 2026-11-15 | After Hard Stop 5 feedback: provenance resolved for T#7, 11, 24, 19, 6, 14 and corrected for T#23; all 34 references and 55 tracker records checked (5 references corrected, 1 partly verified); tracker rows 6 and 23 corrected; verify_outputs.py added; frozen as release a11-evidence-v1. Human reproduction by me to follow (audit/a11/04). |
 | 2026-11-15 | Human reproduction (Run 2) done: I reran the README Windows steps on my own laptop (Python 3.15.2, openpyxl 3.1.5) from release a11-evidence-v1, started with a helper .bat holding only the README commands; ALL OUTPUTS MATCH. Recorded in audit/a11/04, with the full output (04a) and the helper (04b). |
+
+## 2026-11-20 - release a12-evidence-v1 (Assignment 12, Hard Stop 6)
+- Tracker rows 61-80 added (Round 4, OpenAlex Query E "MITRE ATLAS"); decisions proposed by Claude; all 20 reviewed and agreed by Gaurav Sharma on 2026-11-20 (column author_review in audit/a12/08_atlas_screening.csv).
+- rebuild_counts.py: round R4 added; peer-review flag widened from "Repository article" to "Repository" (no change for rows 1-60).
+- New scripts: role_retest.py, fig_tiers.py, fig_chain.py.
+- New audit folder audit/a12 (files 00-13, sheets/, expected_outputs.txt).
+- README: release line, claims table, Step 4c, Step 6, expected outputs, and Windows steps on how to open a command window (from Run 3).
